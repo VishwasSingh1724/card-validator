@@ -3,7 +3,7 @@ import cardSchema from "@/app/lib/card.schema"
 import { DbConnect } from "@/app/lib/connection"
 import { NextResponse } from "next/server"
 
-export async function POST(req:Request,res:Response){
+export async function POST(req:Request){
 
      const {SimNumber,phoneNumber,ActivationStatus,ActivationDate}:any =await  req.json()
      console.log(SimNumber,phoneNumber,ActivationStatus);
